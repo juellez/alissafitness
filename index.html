@@ -42,8 +42,10 @@
 
     #imgstrip { width: 100%; max-width: 1112px;}
 
-    #intro h1 { font-size: 6em; color: #fff; vertical-align: middle; }
-    .intro-section, .about-section {
+    #intro h1, #contact h1 { font-size: 6em; color: #fff; vertical-align: middle; }
+    h1 a, h1 a:hover {color: #fff; text-decoration: none;}
+    #contact p { color: #fff; }
+    .intro-section, .about-section, .contact-section {
         padding-top: 80px;
         min-height: 100%;
         text-align: center;
@@ -58,15 +60,15 @@
 
     /* iphone 6 */
     @media (min-width: 375px) {
-      #intro h1 { font-size: 8em;  }
-      .intro-section { padding-top: 120px; }
+      #intro h1, #contact h1 { font-size: 8em;  }
+      .intro-section, .contact-section { padding-top: 120px; }
     }
     @media (min-width: 639px) {
       body { background-image: url(images/bkg-lg-rockclimbing.jpg); 
         background-size: cover; background-color: #333; background-attachment: fixed; }
       #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
 
-      #intro h1 { font-size: 10em; }
+      #intro h1, #contact h1 { font-size: 10em; }
       .intro-section { padding-top: 150px; }
     }
     @media (min-width: 768px) {
@@ -74,8 +76,8 @@
       .navbar-collapse { background-color: transparent; }
       .social { position: absolute; right: 0;}
 
-      .intro-section { padding-top: 200px; }
-      #intro h1 { margin-bottom: .5em; }
+      .intro-section, .contact-section { padding-top: 200px; }
+      #intro h1, #contact h1 { margin-bottom: .5em; }
     }
 
     </style>
@@ -262,6 +264,19 @@
                 <div class="col-lg-12">
                     <h1>Recipes & Tips</h1>
                     <p>Lots of awesome stuff on Facebook and other social media...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><a href="tel:7147249477">714.724.9477</a></h1>
+                    <p>Text me or email me @ alissalesperance&lt;at&gt;gmail.com.</p>
                 </div>
             </div>
         </div>
