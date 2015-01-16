@@ -23,17 +23,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-/*     #logo { color: transparent; background-image: url(images/alissa-logo-black-transparent.png); width: 168px; height: 83px;
-      background-size: 168px 83px;
-    background-repeat: no-repeat; } */
+    body { background-image: url(images/bkg-md-rockclimbing.jpg); background-size: cover; background-color: #333; background-attachment: fixed; }
 
-
-     #logo { color: transparent; background-image: url(images/alissafitness-logo-black-transparent.png); width: 250px; height: 77px;
+    #logo { color: transparent; background-image: url(images/alissafitness-logo-black-transparent.png); width: 250px; height: 77px;
       background-size: 190px 77px;
-    background-repeat: no-repeat; position: absolute; top: 0; }
-
-    .nav { margin-left: 250px; }
+      background-repeat: no-repeat; position: absolute; top: 0; }
 
     table.schedule { border: solid 1px #ccc; }
     table.schedule td { width: 30em; }
@@ -41,15 +37,46 @@
     table.schedule tr { border-bottom: solid 1px #ccc; }
     table.schedule th, table.schedule td { border-right: solid 1px #ccc; padding: .5em; }
 
-    body { background-image: url(images/bkg-lg-rockclimbing.jpg); background-size: cover; background-color: #333; background-attachment: fixed; }
-
-    .intro-section { background-color: transparent; }
     .navbar-default { background-color: rgba(250,250,250,.8);}
+    .navbar .fa { font-size: 1.5em; }
 
+    #imgstrip { width: 100%; max-width: 1112px;}
 
-    #intro h1 { font-size: 10em; color: #fff; vertical-align: middle; }
+    #intro h1 { font-size: 6em; color: #fff; vertical-align: middle; }
+    .intro-section, .about-section {
+        padding-top: 80px;
+        min-height: 100%;
+        text-align: center;
+    }
+    .about-section {
+        background: #fff; padding-top: 80px;
+    }
+    .class-section, .session-section, .more-section { 
+        min-height: 500px; padding-top: 80px; background-color: rgba(255,255,255,1); 
+    }
+    .navbar-collapse { background-color: #fff; }
 
-    .class-section, .session-section, .more-section { min-height: 500px; padding-top: 80px; background-color: rgba(255,255,255,1); }
+    /* iphone 6 */
+    @media (min-width: 375px) {
+      #intro h1 { font-size: 8em;  }
+      .intro-section { padding-top: 120px; }
+    }
+    @media (min-width: 639px) {
+      body { background-image: url(images/bkg-lg-rockclimbing.jpg); 
+        background-size: cover; background-color: #333; background-attachment: fixed; }
+      #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
+
+      #intro h1 { font-size: 10em; }
+      .intro-section { padding-top: 150px; }
+    }
+    @media (min-width: 768px) {
+      .nav { margin-left: 250px; }
+      .navbar-collapse { background-color: transparent; }
+      .social { position: absolute; right: 0;}
+
+      .intro-section { padding-top: 200px; }
+      #intro h1 { margin-bottom: .5em; }
+    }
 
     </style>
 </head>
@@ -90,6 +117,7 @@
                     <li>
                         <a class="page-scroll" href="#more">Recipes & Tips</a>
                     </li>
+                    <li><a href="https://www.facebook.com/alissafitness" target="_blank"><i class="social fa fa-facebook-square"></i></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -103,7 +131,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Find your fit.</h1>
-                    <a class="btn btn-default page-scroll" href="#about">yoga, circuit training, team training, belly dancing + more</a>
+                    <a class="btn btn-default page-scroll" href="#about">yoga, training + more</a>
                 </div>
             </div>
         </div>
@@ -116,6 +144,16 @@
                 <div class="col-lg-12">
                     <h1>About Alissa Fitness & Yoga</h1>
                     <p>Striving to help you expand your health, happiness and vitality through fitness and yoga.</p>
+
+<p>Alissa Lesperance has a strong background in dance and fitness. She began her journey into yoga over ten years ago and continues to evolve her teaching style as her personal experience grows. She is certified through YogaFit and the American Council on Exercise and has been teaching yoga and dance for 6 years as well as working as a personal trainer. In this time she has studied various styles of yoga from Hatha, Iyengar, Anusara, Power Vinyasa, and traveled to India to study Ashtanga yoga in Mysore. Her teaching style combines her personal experience with the needs of the students in order to help them achieve their own personal balance.</p>
+
+<ul>
+    <li>Personal Trainer of the Year- Northwest Personal Training 2009</li>
+    <li>Guest Presenter at the Northwest Fitness Forum 2010, 2011</li>
+</ul>
+
+<img id="imgstrip" src="images/strip-sm-alissafitness.jpg" />
+
                 </div>
             </div>
         </div>
