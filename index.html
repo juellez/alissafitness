@@ -42,14 +42,18 @@
     .navbar .fa { font-size: 1.5em; }
 
     #imgstrip { width: 100%; max-width: 1112px;}
+    .darken { background-color: rgba(0,0,0,.5); width: 100%; height: 100%; padding: 20px; }
 
     #intro h1 { font-size: 6em; color: #fff; vertical-align: middle; font-family: "Seaweed Script",cursive; }
-    h1 { font-size: 6em; vertical-align: middle; font-family: "Seaweed Script",cursive; }
-    #intro p { color: #fff; font-size: 1.5em; }
+    h1 { font-size: 6em; vertical-align: middle; font-family: "Permanent Marker",sans-serif; }
+    #intro p { font-family: "Permanent Marker",sans-serif; color: #fff; font-size: 1.5em; }
+    #intro p.arrow { line-height: 65%; }
+    sup { left: -4px; }
     #contact h2 {color: #fff; } 
     h2 a, h2 a:hover, h1 a, h1 a:hover {color: #fff; text-decoration: none;}
-    #contact p { background-color: rgba(0,0,0,.5); padding: 20px; }
+    #contact p { padding: 20px; }
     #contact p { color: #fff; font-size: 24px; }
+    #contact p.copyright { font-size: 12px; }
     .intro-section, .about-section, .contact-section {
         padding-top: 80px;
         min-height: 100%;
@@ -136,18 +140,19 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
+    <section id="intro" class="intro-section"><div class="darken">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Fit for life.</h1>
                     <p>Climb mountains. Hike the Pacific Crest Trail. Dance like no one's watching. 
                     Cycle to work. Keep up with your kids. Escape your computer. Look and feel great. 
-                    Being fit means you get to choose your own adventure and live your life your way.</p>
+                    Being fit means you get to choose your own adventure and live your life your own way.</p>
+                    <p class="arrow">|<br><sup>V</sup></p>
                 </div>
             </div>
         </div>
-    </section>
+    </div></section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -155,7 +160,7 @@
             <div class="row">
                 <div class="col-lg-12 left-justify">
                     <h1>Who's Alissa?</h1>
-                    <p>Striving to help you expand your health, happiness and vitality through fitness and yoga.</p>
+                    <!-- <p>Striving to help you expand your health, happiness and vitality through fitness and yoga.</p> -->
 
 <p>Alissa holds a certification through ACE for Personal Training, YogaFit and Schwinn Cycle. She had been helping clients achieve their personal best for the past 7 years. As an avid rock climber, cyclist and yogi with a history of body building, she brings a well rounded approach to her teaching.</p>
 
@@ -286,19 +291,28 @@
     </section>
 
 
-    <!-- About Section -->
-    <section id="contact" class="contact-section">
+    <!-- Phone Section -->
+    <section id="contact" class="contact-section darken">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1><a href="tel:7147249477">714.724.9477</a></h1>
-                    <p><b>Text or email me @ alissalesperance&lt;at&gt;gmail.com.</b></p>
+                    <p><b>text or email me at alissalesperance&nbsp;@&nbsp;gmail.com</b></p>
                 </div>
             </div>
+
+            <br><br><br><br><br><br>
+
+            <div class="row">
+                <div class="col-lg-12">                    
+                    <p class="copyright">Copyright 2015, Alissa Lesperance</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-
+<!--
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
@@ -308,6 +322,7 @@
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
+-->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
