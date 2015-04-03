@@ -56,6 +56,15 @@
     table.schedule tr { border-bottom: solid 1px #ccc; }
     table.schedule th, table.schedule td { border-right: solid 1px #ccc; padding: .5em; }
 
+    table.wkschedule { border: solid 1px #ccc; }
+    table.wkschedule td { text-align: center; padding-left: 20px; padding-right: 20px; }
+    table.wkschedule th.header { width: 300px; }
+    table.wkschedule th.subheader { width: 120px; }
+    table.wkschedule tr { border-bottom: solid 1px #ccc; }
+    table.wkschedule tr.header { background-color: #efefef; }
+    table.wkschedule th { padding: .5em; }
+    table.wkschedule th, table.wkschedule td { border-right: solid 1px #ccc; }
+
     .navbar-default { background-color: rgba(250,250,250,.8);}
     .navbar .fa { font-size: 1.5em; }
 
@@ -63,7 +72,7 @@
     .darken { background-color: rgba(0,0,0,.5); width: 100%; height: 100%; padding: 20px; }
 
     #intro h1 { font-size: 6em; color: #fff; vertical-align: middle; font-family: "Shadows Into Light",cursive; }
-    h1 { font-size: 6em; vertical-align: middle; font-family: "Permanent Marker",sans-serif; }
+    h1 { font-size: 6em; vertical-align: middle; font-family: "Shadows Into Light",sans-serif; }
     #intro p { font-family: "Permanent Marker",sans-serif; color: #fff; font-size: 1.5em; }
     #intro p.arrow { line-height: 65%; }
     sup { left: -4px; }
@@ -147,7 +156,7 @@
                         <a class="page-scroll" href="#session">Book a Session</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#more">Recipes & Tips</a>
+                        <a class="page-scroll" href="#gallery">Gallery</a>
                     </li>
                     <li><a href="https://www.facebook.com/alissafitness" target="_blank"><i class="social fa fa-facebook-square"></i></a></li>
                 </ul>
@@ -200,73 +209,6 @@
         </div>
     </section>
 
-    <!-- Classes Section -->
-    <section id="class" class="class-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Join a class.</h1>
-                    <p>Work out better when you can show off in front of others? Join a class.</p>
-
-                    <table class="schedule"><thead>
-                        <tr>
-                            <th class="header"></th>
-                            <th>Refinery</th>
-                            <th>Portland Rock Gym</th>
-                        </tr></thead>
-                        <tbody><tr>
-                            <th>Mon</th>
-                            <td>
-                                1 hr Team Training @ 2pm <sup>+</sup>  <br>
-                                1 hr Team Training @ 6pm <sup>+</sup>
-                            </td>
-                            <td>
-                            </td>
-                        </tr><tr>
-                            <th>Tues</th>
-                            <td>
-                                1 hr Team Training @ 5:30pm <sup>+</sup> <br>
-                                "Chill Pill" Hatha/Restorative Yoga @ 7pm <sup>*</sup>
-                            </td>
-                            <td>
-                                Vinyassa Yoga for climbers @ 7:15am - 8:30am <sup>^</sup>
-                            </td>                            
-                        </tr><tr>
-                            <th>Wed</th>
-                            <td>
-                                "Friendly Fire" Circuit Training @ 8:30am <sup>*</sup>
-                            </td>
-                            <td>
-                            </td>
-                        </tr><tr>
-                            <th>Thurs</th>
-                            <td>
-                                "The Flow-rida" Vinyassa Yoga @ 9:30am <sup>*</sup>
-                            </td>
-                            <td>
-                            </td>
-                        </tr><tr>
-                            <th>Fri</th>
-                            <td>
-                                1 hr Team Training @ 8am <sup>+</sup>
-                            </td>
-                            <td>
-                            </td>
-                        </tr></tbody></table>
-
-                    <br>
-
-                    <p><sup>+</sup> Team trainings max out at 4 people. <a href="#contact">Contact me</a> to book ahead of time.</p>
-                    
-                    <p><sup>*</sup> All Refinery classes require a class package to be purchased through <a href="http://refineryfitnesspdx.com" target="_blank">RefineryFitnessPDX.com</a>. Receive your first class free when you register online.</p>
-
-                    <p><sup>^</sup> Portland Rock Gym yoga is free for annual members and available to others for a drop-in rate. More info at <a href="http://portlandrockgym.com/yoga" target="_blank">PortlandRockGym.com</a>.</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Book Section -->
     <section id="session" class="session-section">
         <div class="container">
@@ -274,6 +216,7 @@
                 <div class="col-lg-12">
                     <h1>Book a personal and private session.</h1>
                     <p>Don't have a full hour or want some personal attention? Block out some dedicated time each week. <a href="#contact">Contact me</a> to book 30-90 minutes within the following general time slots.</p>
+
                     <table class="schedule">
                         <tr>
                             <th>Mon</th>
@@ -296,13 +239,102 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="more" class="more-section">
+    <!-- Classes Section -->
+    <section id="class" class="class-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Recipes & Tips</h1>
-                    <p>Lots of awesome stuff on Facebook and other social media...</p>
+                    <h1>Join a class.</h1>
+                    <p>Work out better when you can show off in front of others? Join a class.</p>
+
+
+                    <table class="wkschedule"><thead>
+                        <tr class="header">
+                            <th class="header">Class</th>
+                            <th class="subheader">Location</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thrs</th>
+                            <th>Fri</th>
+                        </tr></thead>
+                        <tbody><tr>
+                            <th>1 hr Team Training <sup>+</sup></th>
+                            <th>Refinery</th>
+                            <td><!-- Monday --> 2 pm<br>6 pm</td>
+                            <td><!-- Tuesday -->   5:30 pm</td>
+                            <td><!-- Wednesday -->       </td>
+                            <td><!-- Thursday -->        </td>
+                            <td><!-- Friday -->    8 am   </td>
+                        </tr><tr>
+                            <th>"Chill Pill" Hatha/Restorative Yoga </th>
+                            <th>Refinery <sup>*</sup></th>
+                            <td><!-- Monday --> </td>
+                            <td><!-- Tuesday --> 7 pm</td>
+                            <td><!-- Wednesday --> </td>
+                            <td><!-- Thursday --> </td>
+                            <td><!-- Friday --> </td>
+                        </tr><tr>
+                            <th>Vinyassa Yoga for climbers</th>
+                            <th>Portland Rock Gym <sup>^</sup></th>
+                            <td><!-- Monday --> </td>
+                            <td><!-- Tuesday --> 7:15 - <br>8:30 am</td>
+                            <td><!-- Wednesday --> </td>
+                            <td><!-- Thursday --> </td>
+                            <td><!-- Friday --> </td>
+                        </tr><tr>
+                            <th>"Friendly Fire" Circuit Training</th>
+                            <th>Refinery <sup>*</sup></th>
+                            <td><!-- Monday --> </td>
+                            <td><!-- Tuesday --> </td>
+                            <td><!-- Wednesday --> 8:30 am</td>
+                            <td><!-- Thursday --> </td>
+                            <td><!-- Friday --> </td>
+                        </tr><tr>
+                            <th>"The Flow-rida" Vinyassa Yoga</th>
+                            <th>Refinery <sup>*</sup></th>
+                            <td><!-- Monday --> </td>
+                            <td><!-- Tuesday --> </td>
+                            <td><!-- Wednesday --> </td>
+                            <td><!-- Thursday --> 9:30 am</td>
+                            <td><!-- Friday --> </td>
+
+<!-- START: copy and paste this section to add a new row --><!--
+                        </tr><tr>
+                            <th></th>
+                            <th></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+--><!-- STOP: this is the end of a new row -->
+
+                        </tr></tbody></table>
+
+                    <br>
+
+                    <p><sup>+</sup> Team trainings max out at 4 people. <a href="#contact">Contact me</a> to book ahead of time.</p>
+                    
+                    <p><sup>*</sup> All Refinery classes require a class package to be purchased through <a href="http://refineryfitnesspdx.com" target="_blank">RefineryFitnessPDX.com</a>. Receive your first class free when you register online.</p>
+
+                    <p><sup>^</sup> Portland Rock Gym yoga is free for annual members and available to others for a drop-in rate. More info at <a href="http://portlandrockgym.com/yoga" target="_blank">PortlandRockGym.com</a>.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="gallery" class="more-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Gallery</h1>
+
+                    <iframe src="https://www.flickr.com/photos/alissafitness/sets/72157651730199885/player" width="100%" height="600" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    <p style="text-align:center"><em>photography copyrighted by individual photographers and used with permission</em></p>
+                    <br><br><br><br>
                 </div>
             </div>
         </div>
