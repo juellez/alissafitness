@@ -105,6 +105,8 @@
     .wkschedule small sup { font-size: 12px; left: 0; top: 0; }
     .schedule-container { max-width: 100%; overflow: scroll; }
 
+    .nav > li > a.social { display: inline-block; padding-right: 0; padding-left: 6px; color: #666; }
+
 /* Smartphones (portrait and landscape) ----------- */
     @media only screen and (min-width : 320px) and (max-width : 640px) {
       .navbar { min-height: 62px; }
@@ -239,13 +241,13 @@
                     <li>
                         <a class="page-scroll" href="#gallery">Gallery</a>
                     </li>
-                    <li class="hidden-xs"><a href="https://www.facebook.com/alissafitness" target="_blank"><i 
+                    <li class="hidden-xs"><a class="social" href="https://www.facebook.com/alissafitness" target="_blank"><i 
                         class="social fa fa-facebook-square"></i></a> 
-                        <a href="https://instagram.com/alissapdx/" target="_blank"><i 
+                        <a class="social" href="https://instagram.com/alissapdx/" target="_blank"><i 
                         class="social fa fa-instagram"></i></a> 
-                        <a href="https://twitter.com/alissafitness" target="_blank"><i 
+                        <a class="social" href="https://twitter.com/alissafitness" target="_blank"><i 
                         class="social fa fa-twitter"></i></a>
-                        <a href="https://flickr.com/photos/alissafitness" target="_blank"><i 
+                        <a class="social" href="https://flickr.com/photos/alissafitness" target="_blank"><i 
                         class="social fa fa-flickr"></i></a></li>
                 </ul>
             </div>
@@ -496,5 +498,16 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63026740-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
