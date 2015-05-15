@@ -43,7 +43,7 @@
     <![endif]-->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Permanent+Marker' rel='stylesheet' type='text/css'>    <style>
-    body { background-repeat: no-repeat; background-image: url(images/bkg-md-rockclimbing.jpg); background-size: cover; background-color: #333; }
+    #intro { background-repeat: no-repeat; background-image: url(images/bkg-md-rockclimbing.jpg); background-size: cover; background-color: #333; }
 
     h1 {margin-top: 36px;}
     #logo { color: transparent; background-image: url(images/alissafitness-logo-black-transparent.png); width: 250px; height: 77px;
@@ -102,9 +102,14 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/*  body { background-attachment: fixed; }
-*/  h1 { font-size: 48px; margin-top: 40px;}
+  #intro { 
+    background-attachment:scroll;
+    background position:left top;
+    background-size:cover;
+  }
+  h1 { font-size: 48px; margin-top: 40px;}
   #intro h1 { font-size: 92px; margin-top: 20px; }
+  #intro { height: 100; overflow: scroll; }
   #contact h1 { font-size: 48px; margin-top: 20px; }
   .about-section { padding-top: 20px;}
   .intro-section, .contact-section { padding-top: 80px; }
@@ -118,14 +123,14 @@
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 410px) {
   .table-portrait-warning { display: inline-block; font-style: oblique; }
   .wkschedule { display: none; }
 }
 
 /* unknown */
 @media only screen and (min-device-width : 639px) and (max-device-width : 768px) {
-  body { background-image: url(images/bkg-lg-rockclimbing.jpg); 
+  #intro { background-image: url(images/bkg-lg-rockclimbing.jpg); 
     background-size: cover; background-color: #333; background-attachment: fixed; }
   #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
 
@@ -136,7 +141,7 @@
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-      body { background-attachment: fixed; }
+      #intro { background-attachment: fixed; }
       .nav { margin-left: 250px; }
       .navbar-collapse { background-color: transparent; }
       .social { position: absolute; right: 0;}
@@ -147,6 +152,13 @@
 }
 
     </style>
+
+<script>
+$(window).scroll(function() {
+  var scrolledY = $(window).scrollTop();
+  $('body').css('background-position', 'left ' + ((scrolledY)) + 'px');
+});
+</script>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
