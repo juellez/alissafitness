@@ -42,11 +42,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Permanent+Marker' rel='stylesheet' type='text/css'>    <style>
-    #intro { background-repeat: no-repeat; background-image: url(images/bkg-md-rockclimbing.jpg); background-size: cover; background-color: #333; }
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Permanent+Marker' rel='stylesheet' type='text/css'>    
 
+    <style>
     h1 {margin-top: 36px;}
-    #logo { color: transparent; background-image: url(images/alissafitness-logo-black-transparent.png); width: 250px; height: 77px;
+    #logo { color: transparent; background-image: url(images/alissafitness-logo-black-transparent.png); 
+        width: 200px; height: 77px;
       background-size: 190px 77px;
       background-repeat: no-repeat; position: absolute; top: 0; }
 
@@ -66,10 +67,13 @@
     table.wkschedule th, table.wkschedule td { border-right: solid 1px #ccc; }
 
     .navbar-default { background-color: rgba(250,250,250,.8);}
+    .navbar-collapse { background-color: transparent; }
     .navbar .fa { font-size: 1.5em; }
+    .navbar-default .navbar-nav > li > a { color: #333; }
+    .navbar { min-height: 80px; padding: 10px 0; margin-bottom: 0; }
 
     #imgstrip { width: 100%; max-width: 1112px;}
-    .darken { background-color: rgba(0,0,0,.5); width: 100%; height: 100%; padding: 20px; }
+    .darken { background-color: rgba(0,0,0,.5); width: 100%; padding: 20px; }
 
     #intro h1 { font-size: 6em; color: #fff; vertical-align: middle; font-family: "Shadows Into Light",cursive; }
     h1 { font-size: 6em; vertical-align: middle; font-family: "Shadows Into Light",sans-serif; }
@@ -78,93 +82,124 @@
     sup { left: -4px; }
     #contact h2 {color: #fff; } 
     h2 a, h2 a:hover, h1 a, h1 a:hover {color: #fff; text-decoration: none;}
+
     #contact p { padding: 20px; }
     #contact p { color: #fff; font-size: 24px; }
     #contact p.copyright { font-size: 12px; }
+    section { padding: 0 16px; }
     .intro-section, .about-section, .contact-section {
         padding-top: 80px;
         min-height: 100%;
         text-align: center;
     }
+    .intro-section, .contact-section { padding-left: 0; padding-right: 0; }
     .about-section {
         background: #fff; padding-top: 80px;
     }
     .class-section, .session-section, .more-section { 
         min-height: 500px; padding-top: 80px; background-color: rgba(255,255,255,1); 
     }
-    .navbar-collapse { background-color: #fff; }
     .left-justify { text-align: left;}
 
-  .navbar { min-height: 80px; }
-  .wkschedule small { font-weight: normal; }
-  .wkschedule small sup { font-size: 12px; left: 0; top: 0; }
-  .table-portrait-warning { display: none; }
+    .wkschedule small { font-weight: normal; }
+    .wkschedule small sup { font-size: 12px; left: 0; top: 0; }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #intro { 
-    background-attachment:scroll;
-    background position:left top;
-    background-size:cover;
-  }
-  h1 { font-size: 48px; margin-top: 40px;}
-  #intro h1 { font-size: 92px; margin-top: 20px; }
-  #intro { height: 100; overflow: scroll; }
-  #contact h1 { font-size: 48px; margin-top: 20px; }
-  .about-section { padding-top: 20px;}
-  .intro-section, .contact-section { padding-top: 80px; }
-  .navbar { min-height: 80px; }
-  .wkschedule td { font-size: 11px; }
-}
+    @media only screen and (min-width : 320px) and (max-width : 640px) {
+      .navbar { min-height: 62px; }
+      .intro-section { padding-top: 62px; }
+      #intro, #contact { 
+        background-image: url(images/bkg-sm-rockclimbing.jpg); 
+        background-attachment:scroll;
+        background position:left top;
+        background-size:cover;
+        background-repeat: no-repeat; background-size: cover; background-color: #333;
+      }
+      #intro p.be-fit { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 18px; font-weight: lighter; }
+      .darken { padding: 20px 0 0 0; height: 100%; }
+      #logo { color: transparent; background-image: url(images/alissafitness-logo-black-transparent.png); 
+        width: 165px; height: 61px;
+        background-size: 160px 61px;
+        background-repeat: no-repeat; position: absolute; top: 0; }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+      h1 { font-size: 48px; margin-top: 40px;}
+      #intro h1 { font-size: 92px; margin-top: 20px; }
+      #intro { height: 100; overflow: scroll; }
+      #contact h1 { font-size: 48px; margin-top: 20px; }
+      #gallery-frame { height: 300px;}
+      .about-section { padding-top: 20px;}
+      .contact-section { padding-top: 80px; }
+      .wkschedule td { font-size: 11px; }
+    }
 
-}
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 410px) {
-  .table-portrait-warning { display: inline-block; font-style: oblique; }
-  .wkschedule { display: none; }
-}
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+      #gallery-frame { height: 500px;}
+      .table-portrait-warning { display: none; }
+      .schedule-container { width: 100%; overflow: scroll; }
+    }
 
-/* unknown */
-@media only screen and (min-device-width : 639px) and (max-device-width : 768px) {
-  #intro { background-image: url(images/bkg-lg-rockclimbing.jpg); 
-    background-size: cover; background-color: #333; background-attachment: fixed; }
-  #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 410px) {
+      #gallery-frame { height: 300px;}
+      .table-portrait-warning { display: inline-block; font-style: oblique; }
+    }
 
-  #intro h1, #contact h1 { font-size: 10em; }
-  .intro-section { padding-top: 150px; }
 
-}
+/* Tablets: intro bkg ----------- */
+    @media only screen and (min-width: 640px) {
+      #intro, #contact { 
+        background-image: url(images/bkg-lg-rockclimbing.jpg); 
+        background-attachment:scroll;
+        background position:left top;
+        background-size:cover;
+        background-repeat: no-repeat; background-size: cover; background-color: #333;
+      }
+      #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
+      #gallery-frame { height: 500px;}
+      .table-portrait-warning { display: none; }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-      #intro { background-attachment: fixed; }
+      #intro h1, #contact h1 { font-size: 10em; }
+      .about-section { padding-top: 80px;}
+      .contact-section { padding-top: 0;}
+      .intro-section .darken, .contact-section .darken { padding-top: 150px; padding-bottom: 150px; }
+    }
+
+/* Desktop: body bkg ----------- */
+
+    @media only screen and (min-width: 1024) {
+      body { 
+        background-image: url(images/bkg-lg-rockclimbing.jpg); 
+        background-attachment: fixed;
+        background position:left top;
+        background-size:cover;
+        background-repeat: no-repeat; background-size: cover; background-color: #333;
+      }
       .nav { margin-left: 250px; }
-      .navbar-collapse { background-color: transparent; }
       .social { position: absolute; right: 0;}
 
       .intro-section, .contact-section { padding-top: 200px; }
       #intro h1, #contact h1 { margin-bottom: .5em; }
       #intro p { font-size: 2.5em; }
-}
+    }
+
 
     </style>
-
-<script>
-$(window).scroll(function() {
-  var scrolledY = $(window).scrollTop();
-  $('body').css('background-position', 'left ' + ((scrolledY)) + 'px');
-});
-</script>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1561527460782814";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -180,7 +215,7 @@ $(window).scroll(function() {
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav pull-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
@@ -193,6 +228,9 @@ $(window).scroll(function() {
                     </li>
                     <li>
                         <a class="page-scroll" href="#class">Join a Class</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#events">Events</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#gallery">Gallery</a>
@@ -211,7 +249,9 @@ $(window).scroll(function() {
             <div class="row">
                 <div class="col-lg-12">
                     <h1>fit for life.</h1>
-                    <p>Climb mountains. Hike the Pacific Crest Trail. Dance like no one's watching. 
+                    <p class="visible-xs be-fit">Climb mountains. Hike the Pacific Crest Trail. Dance like no one's watching.
+                    Cycle to work. Keep up with your kids. Escape your computer. Look and feel great!<br><br>Be fit and choose your own adventures.</p>
+                    <p class="hidden-xs">Climb mountains. Hike the Pacific Crest Trail. Dance like no one's watching. 
                     Cycle to work. Keep up with your kids. Escape your computer. Look and feel great. 
                     Being fit means you get to choose your own adventure and live your life your way.</p>
                     <p class="arrow">|<br><sup>V</sup></p>
@@ -239,8 +279,6 @@ $(window).scroll(function() {
     <li>Guest Presenter at the Northwest Fitness Forum 2010, 2011</li>
 </ul>
 
-<p><a href="#contact">Who are you and what do you want out of fitness?</a></p>
-
 <img id="imgstrip" src="images/strip-sm-alissafitness.jpg" />
 
                 </div>
@@ -254,7 +292,7 @@ $(window).scroll(function() {
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Book a personal and private session.</h1>
-                    <p>Don't have a full hour or want some personal attention? Block out some dedicated time each week. <a href="#contact">Contact me</a> to book 30-90 minutes within the following general time slots.</p>
+                    <p>Don't have a full hour or want some personal attention? Block out dedicated time each week. <a href="#contact">Contact me</a> to book 30-90 minutes within the following time slots.</p>
 
                     <table class="schedule">
                         <tr>
@@ -284,9 +322,10 @@ $(window).scroll(function() {
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Join a class.</h1>
-                    <p>Work out better when you can show off in front of others? Join a class.</p>
+                    <p>Work out better with others? Join me for a class.</p>
 
-                    <div class="table-portrait-warning">(turn your phone to see full schedule)</div>
+                    <div class="schedule-container">
+                    <div class="table-portrait-warning">(turn your phone or scroll to see full schedule)</div>
                     <table class="wkschedule"><thead>
                         <tr class="header">
                             <th class="header">Class <small>and Location</small></th>
@@ -344,6 +383,7 @@ $(window).scroll(function() {
 --><!-- STOP: this is the end of a new row -->
 
                         </tr></tbody></table>
+                    </div>
 
                     <br>
 
@@ -353,19 +393,37 @@ $(window).scroll(function() {
 
                     <p><sup>^</sup> Portland Rock Gym yoga is free for annual members and available to others for a drop-in rate. More info at <a href="http://portlandrockgym.com/yoga" target="_blank">PortlandRockGym.com</a>.</p>
 
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Events Section -->
+    <section id="events" class="more-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Events</h1>
+                    <p>Check out my Facebook page for upcoming hikes, yoga retreats and other events.</p>
+
+                    <div class="center">
+                        <div class="fb-page" data-href="https://www.facebook.com/alissafitness" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/alissafitness"><a href="https://www.facebook.com/alissafitness">Alissa Lesperance Fitness and Yoga</a></blockquote></div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
     <section id="gallery" class="more-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Gallery</h1>
+                    <h1>Photo Gallery</h1>
 
-                    <iframe src="https://www.flickr.com/photos/alissafitness/sets/72157651730199885/player" width="100%" height="600" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                    <iframe id="gallery-frame" src="https://www.flickr.com/photos/alissafitness/sets/72157651730199885/player" width="100%" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
                     <p style="text-align:center"><em>photography copyrighted by individual photographers and used with permission</em></p>
                     <br><br><br><br>
                 </div>
@@ -375,7 +433,7 @@ $(window).scroll(function() {
 
 
     <!-- Phone Section -->
-    <section id="contact" class="contact-section darken">
+    <section id="contact" class="contact-section"><div class="darken">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -393,7 +451,8 @@ $(window).scroll(function() {
             </div>
 
         </div>
-    </section>
+    </div></section>
+</div>
 
 <!--
     <br><br><br><br><br><br>
@@ -416,7 +475,5 @@ $(window).scroll(function() {
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
 </body>
-
 </html>
