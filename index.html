@@ -95,20 +95,46 @@
     .navbar-collapse { background-color: #fff; }
     .left-justify { text-align: left;}
 
-    /* iphone 6 */
-    @media (min-width: 375px) {
-      #intro h1, #contact h1 { font-size: 8em;  }
-      .intro-section, .contact-section { padding-top: 120px; }
-    }
-    @media (min-width: 639px) {
-      body { background-image: url(images/bkg-lg-rockclimbing.jpg); 
-        background-size: cover; background-color: #333; background-attachment: fixed; }
-      #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
+  .navbar { min-height: 80px; }
+  .wkschedule small { font-weight: normal; }
+  .wkschedule small sup { font-size: 12px; left: 0; top: 0; }
+  .table-portrait-warning { display: none; }
 
-      #intro h1, #contact h1 { font-size: 10em; }
-      .intro-section { padding-top: 150px; }
-    }
-    @media (min-width: 768px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body { background-attachment: fixed; }
+  h1 { font-size: 48px; margin-top: 40px;}
+  #intro h1 { font-size: 92px; margin-top: 20px; }
+  #contact h1 { font-size: 48px; margin-top: 20px; }
+  .about-section { padding-top: 20px;}
+  .intro-section, .contact-section { padding-top: 80px; }
+  .navbar { min-height: 80px; }
+  .wkschedule td { font-size: 11px; }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .table-portrait-warning { display: inline-block; font-style: oblique; }
+}
+
+/* unknown */
+@media only screen and (min-device-width : 639px) and (max-device-width : 768px) {
+  body { background-image: url(images/bkg-lg-rockclimbing.jpg); 
+    background-size: cover; background-color: #333; background-attachment: fixed; }
+  #imgstrip { content:url("images/strip-lg-alissafitness.jpg"); }
+
+  #intro h1, #contact h1 { font-size: 10em; }
+  .intro-section { padding-top: 150px; }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
       body { background-attachment: fixed; }
       .nav { margin-left: 250px; }
       .navbar-collapse { background-color: transparent; }
@@ -117,7 +143,7 @@
       .intro-section, .contact-section { padding-top: 200px; }
       #intro h1, #contact h1 { margin-bottom: .5em; }
       #intro p { font-size: 2.5em; }
-    }
+}
 
     </style>
 </head>
@@ -247,11 +273,10 @@
                     <h1>Join a class.</h1>
                     <p>Work out better when you can show off in front of others? Join a class.</p>
 
-
+                    <div class="table-portrait-warning">(turn your phone to see full schedule)</div>
                     <table class="wkschedule"><thead>
                         <tr class="header">
-                            <th class="header">Class</th>
-                            <th class="subheader">Location</th>
+                            <th class="header">Class <small>and Location</small></th>
                             <th>Mon</th>
                             <th>Tues</th>
                             <th>Wed</th>
@@ -259,44 +284,39 @@
                             <th>Fri</th>
                         </tr></thead>
                         <tbody><tr>
-                            <th>1 hr Team Training <sup>+</sup></th>
-                            <th>Refinery</th>
-                            <td><!-- Monday --> 2 pm<br>6 pm</td>
-                            <td><!-- Tuesday -->   5:30 pm</td>
+                            <th>1 hr Team Training <sup>&nbsp;+</sup><br><small>Refinery</small></th>
+                            <td><!-- Monday --> 2pm<br>6pm</td>
+                            <td><!-- Tuesday -->   5:30pm</td>
                             <td><!-- Wednesday -->       </td>
                             <td><!-- Thursday -->        </td>
-                            <td><!-- Friday -->    8 am   </td>
+                            <td><!-- Friday -->    8am   </td>
                         </tr><tr>
-                            <th>"Chill Pill" Hatha/Restorative Yoga </th>
-                            <th>Refinery <sup>*</sup></th>
+                            <th>"Chill Pill" Hatha/ Restorative Yoga<br><small>Refinery <sup>*</sup></small></th>
                             <td><!-- Monday --> </td>
-                            <td><!-- Tuesday --> 7 pm</td>
+                            <td><!-- Tuesday --> 7pm</td>
                             <td><!-- Wednesday --> </td>
                             <td><!-- Thursday --> </td>
                             <td><!-- Friday --> </td>
                         </tr><tr>
-                            <th>Vinyassa Yoga for climbers</th>
-                            <th>Portland Rock Gym <sup>^</sup></th>
+                            <th>Vinyassa Yoga for climbers<br><small>Portland Rock Gym <sup>^</sup></small></th>
                             <td><!-- Monday --> </td>
-                            <td><!-- Tuesday --> 7:15 - <br>8:30 am</td>
+                            <td><!-- Tuesday --> 7:15 - <br>8:30am</td>
                             <td><!-- Wednesday --> </td>
                             <td><!-- Thursday --> </td>
                             <td><!-- Friday --> </td>
                         </tr><tr>
-                            <th>"Friendly Fire" Circuit Training</th>
-                            <th>Refinery <sup>*</sup></th>
+                            <th>"Friendly Fire" Circuit Training<br><small>Refinery <sup>*</sup></small></th>
                             <td><!-- Monday --> </td>
                             <td><!-- Tuesday --> </td>
-                            <td><!-- Wednesday --> 8:30 am</td>
+                            <td><!-- Wednesday --> 8:30am</td>
                             <td><!-- Thursday --> </td>
                             <td><!-- Friday --> </td>
                         </tr><tr>
-                            <th>"The Flow-rida" Vinyassa Yoga</th>
-                            <th>Refinery <sup>*</sup></th>
+                            <th>"The Flow-rida" Vinyassa Yoga<br><small>Refinery <sup>*</sup></small></th>
                             <td><!-- Monday --> </td>
                             <td><!-- Tuesday --> </td>
                             <td><!-- Wednesday --> </td>
-                            <td><!-- Thursday --> 9:30 am</td>
+                            <td><!-- Thursday --> 9:30am</td>
                             <td><!-- Friday --> </td>
 
 <!-- START: copy and paste this section to add a new row --><!--
@@ -347,7 +367,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1><a href="tel:7147249477">714.724.9477</a></h1>
-                    <p><b>text or email me at alissalesperance&nbsp;@&nbsp;gmail.com</b></p>
+                    <p><b>text or email me at alissalesperance @ gmail.com</b></p>
                 </div>
             </div>
 
