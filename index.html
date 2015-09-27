@@ -14,6 +14,8 @@
     <meta name="author" content="Alissa Lesperance">
 
     <meta name="msvalidate.01" content="AF9E07F67068061E4E09ED33448301C4" />
+    <meta name="dns-prefetch" href="//fonts.googleapis.com" />
+    <meta name="dns-prefetch" href="//maxcdn.bootstrapcdn.com" />
 
     <!-- Facebook Shares -->
     <meta name="og:url" content="http://alissafitness.com">
@@ -32,7 +34,7 @@
     <meta name="twitter:image:src" content="http://juellez.github.io/alissafitness/meta/alissafitnessOG1200x630.jpg">
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css?new=1" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -109,6 +111,27 @@
 
     .nav > li > a.social { display: inline-block; padding-right: 0; padding-left: 6px; color: #666; }
 
+    @media only screen and (min-width: 767px) and (max-width: 1024px) {
+      .navbar-nav > li.no-hover {
+        position: absolute;
+        top: 56px;
+        right: 20px;
+      }
+      .nav > li > a.social {
+            color: rgba(255,255,255,.8);
+      }
+      .nav > li > a.social:hover {
+            color: #fff;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+          .navbar .fa {
+            font-size: 2em;
+         }
+    }
+    @media only screen and (min-width: 1024px) {
+        .nav > li.no-hover { margin-right: -20px; margin-left: 20px; }
+    }
 /* Smartphones (portrait and landscape) ----------- */
     @media only screen and (min-width : 320px) and (max-width : 640px) {
       .navbar { min-height: 62px; }
@@ -243,7 +266,7 @@
                     <li>
                         <a class="page-scroll" href="#gallery">Gallery</a>
                     </li>
-                    <li class="hidden-xs"><a class="social" href="https://www.facebook.com/alissafitness" target="_blank"><i 
+                    <li class="no-hover"><a class="social" href="https://www.facebook.com/alissafitness" target="_blank"><i 
                         class="social fa fa-facebook-square"></i></a> 
                         <a class="social" href="https://instagram.com/alissapdx/" target="_blank"><i 
                         class="social fa fa-instagram"></i></a> 
@@ -263,10 +286,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>fit for life.</h1>
+                    <h1>fit for life</h1>
                     <p class="visible-xs be-fit">Climb mountains. Hike the Pacific Crest Trail. Dance like no one's watching.
                     Cycle to work. Keep up with your kids. Escape your computer. Look and feel great!<br><br>
-                    Be fit and choose your own adventures with your new personal training in Portland, Oregon.</p>
+                    Be fit and choose your own adventures with your new personal trainer in Portland, Oregon.</p>
                     <p class="hidden-xs">Climb mountains. Hike the Pacific Crest Trail. Dance like no one's watching. 
                     Cycle to work. Keep up with your kids. Escape your computer. Look and feel great. 
                     Being fit means you get to choose your own adventure and live your life your way.<br><br>
@@ -513,6 +536,11 @@ She traveled to India for 3 months to study yoga and traditional dance. Living i
   ga('create', 'UA-63026740-1', 'auto');
   ga('send', 'pageview');
 
+    $(document).ready(function () {
+      $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+    });
 </script>
 </body>
 </html>
