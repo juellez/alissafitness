@@ -152,7 +152,8 @@
         background-attachment:scroll;
         background position:left top;
         background-size:cover;
-        background-repeat: no-repeat; background-size: cover; background-color: #333;
+        background-repeat: no-repeat; 
+        background-color: #333;
       }
       #intro p.be-fit {     font-family: 'Source Sans Pro', sans-serif;
     font-size: 21px;
@@ -180,6 +181,27 @@
       .mobile-icons a { color: #fff; }
     }
 
+    /* Portrait Backgrounds */
+    @media only screen and (max-width : 375px) and (-webkit-min-device-pixel-ratio: 2) {
+      #intro, #contact { 
+        background-image: url(images/bkg-375x667@2-rockclimbing.jpg); 
+        background-attachment:scroll;
+        background position:left top;
+        background-size:375px 667px;
+        background-repeat: no-repeat; 
+        background-color: #333;
+      }
+    }
+    @media only screen and (min-width : 375px) and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+      #intro, #contact { 
+        background-image: url(images/bkg-414x828@2-rockclimbing.jpg); 
+        background-attachment:scroll;
+        background position:left top;
+        background-size:414px 828px;
+        background-repeat: no-repeat; 
+        background-color: #333;
+      }
+    }
 
     /* Smartphones (landscape) ----------- */
     @media only screen and (min-width : 321px) {
